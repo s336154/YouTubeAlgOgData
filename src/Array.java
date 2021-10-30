@@ -13,7 +13,7 @@ public class Array {
     public static void printArray(int[] n) {
 
         for (int i = 0; i < n.length; i++) {
-            System.out.print(n[1] + " ");
+            System.out.print(n[i] + " ");
         }
         System.out.println();
     }
