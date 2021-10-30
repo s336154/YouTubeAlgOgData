@@ -27,10 +27,14 @@ public class SelectionSort {
         for(int i =0; i<n-1; i++){
             int min = i;
             for(int j = i+1; j<n; j++){
+                //j is the value after i and if it was greater than i which is the minimum value
+                //then we assign minimum value to be j
                 if(arr[j] < arr[min]) {
                     min= j;
                 }
             }
+
+            //then we perform a swap if j is lesser than i
 
             int temp = arr[min];
             arr[min] = arr[i];
