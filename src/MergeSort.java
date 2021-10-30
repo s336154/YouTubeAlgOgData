@@ -1,5 +1,7 @@
 public class MergeSort {
 
+    // we use this method to sort an array
+
     public static void main(String[] args) {
         int[] arr = {0, 1, 4, -2, 9,  8, 89}; // array is unsorted
         MergeSort ms = new MergeSort();

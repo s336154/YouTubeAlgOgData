@@ -2,6 +2,8 @@
 
 public class MergeSorted {
 
+    // we use this method to merge two sorted arrays into new array
+
     public static void main(String[] args) {
         MergeSorted msa = new MergeSorted();
         int [] arr1 = {0, 1 , 4, 8,89}; // array is sorted
