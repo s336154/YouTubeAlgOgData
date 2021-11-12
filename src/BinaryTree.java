@@ -165,7 +165,9 @@ public class BinaryTree {
             } else {
                 temp = stack.pop();
                 System.out.print(temp.data + "");
-                temp = temp.right;
+                temp = temp.right;  //visit the left subtree completely then the right subtree completely if we reach null
+                // we return to the nearest root and print it if we reched the null value in right part
+                //we print the further left to the left then the further right to the right then the top
             }
         }
     }
@@ -188,9 +190,7 @@ public class BinaryTree {
 
     public void postOrderIt(TreeNode root) {  //Recursive method
 
-        //visit the left subtree completely then the right subtree completely if we reach null
-        // we return to the nearest root and print it if we reched the null value in right part
-        //we print the further left to the left then the further right to the right then the top
+
 
         TreeNode current = root;
         Stack<TreeNode> stack = new Stack<>();
