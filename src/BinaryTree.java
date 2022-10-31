@@ -84,6 +84,8 @@ public class BinaryTree {
     }
 
     /*
+
+    ################################## B I N A R Y - S E A R C H - T R E E #####################################
     public void insert(int value){
         root = insert(root, value);
     }
@@ -101,6 +103,17 @@ public class BinaryTree {
             }
             return root;
         }
+
+        public TreeNode search(TreeNode root, int key){
+        if(root==null || root.data ==key){
+        return root; //will return null if value is not found
+       }
+       if (key < root.data) {
+       return search(root.left, key) }
+       else {
+       return search(root.right, key) }
+       }
+
 */
 
 

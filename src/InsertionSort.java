@@ -25,9 +25,9 @@ public class InsertionSort {
 
     public void insertionSort(int [] arr) {
 
-        for(int i =1; i <arr.length ; i++){
+        for(int i =1; i <arr.length ; i++){  //unsorted part
             int temp = arr[i];  // values in the array
-            int j = i - 1; //variable with index b4 i
+            int j = i - 1; //variable with index b4 i //sorted part
             while(j >= 0 && arr[j] > temp){ // er are swapping values inside this loop if j > i
                 arr[j+1] = arr[j];//arr[j+1] is similar to arr[i]/ we are shifting/swapping variables here
                 j= j-1;

@@ -16,19 +16,21 @@ public class BinarySearch {
         int high = nums.length - 1;
 
         while( low <= high) {
-            int mid = ( high + low)/2;
+            int mid = ( high + low)/2;  //divide the list into two
             if(nums[mid] == key) {
                 return mid;
             }
 
             if(key < nums[mid]){
-                high = mid -1;
+                high = mid -1; // search in the first half
             } else {
-                low = mid + 1;
+                low = mid + 1;  //search in the second half
             }
         }
         return -1;
 
 
     }
+
+
 }
