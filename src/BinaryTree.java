@@ -104,6 +104,9 @@ public class BinaryTree {
             return root;
         }
 
+        public TreeNode search(int key){
+        return search(root, key) }
+
         public TreeNode search(TreeNode root, int key){
         if(root==null || root.data ==key){
         return root; //will return null if value is not found
